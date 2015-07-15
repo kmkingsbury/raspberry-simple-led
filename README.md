@@ -4,6 +4,9 @@ A simple python script to light some LED lights.
 
 
 
+Running:
+docker run --cap-add ALL --device /dev/mem  kmkingsbury/test:0.1
+
 
 
 
