@@ -13,7 +13,6 @@ GPIO.setup(12, GPIO.OUT) ## Setup GPIO pin 12 to OUT
 iterations = 100 #raw_input("Enter the total number of times to blink: ")
 speed = .5 #raw_input("Enter the length of each blink in seconds: ")
 
-## Define function named Blink()
 i = 0
 try:
     while True:
@@ -35,7 +34,7 @@ try:
         time.sleep(speed) ## Wait
         GPIO.output(12, False) ## Switch off GPIO pin 7
         time.sleep(speed) ## Wait
-except KeyboardInterrupt:
+except:
     print "Done" ## When loop is complete, print "Done"
     GPIO.cleanup()
 
